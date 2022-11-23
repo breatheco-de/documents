@@ -28,12 +28,6 @@ const Certificate = ({ data }) => {
                 <p style={stylesDefault.completionDescription}>{data.academy.name}</p>
                 <p style={stylesDefault.completionDescription}>{dayjs(data.issued_at || data.cohort.ending_date).locale(data.lang || "en").format("DD MMMM YYYY")}</p>
             </div>
-            <div id="department" style={stylesDefault.department}>
-                <img alt="florida department of education logo"
-                    src="https://storage.googleapis.com/certificates-breathecode/assets/fdoe.png"
-                    width="168px"
-                    height="48px" />
-            </div>
             <div id="signature" style={stylesDefault.signature}>
                 <p style={stylesDefault.sign}>{data.signed_by}</p>
                 <p style={stylesDefault.signedBy}>{data.signed_by}</p>
