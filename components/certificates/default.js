@@ -24,7 +24,7 @@ const Certificate = ({ data }) => {
             </div>
             <div id="completion" style={stylesDefault.completion}>
                 <p style={stylesDefault.completionDescription}>{data.strings["Has successfully completed"] + " " + data.specialty.name.toUpperCase()}</p>
-                <p style={stylesDefault.completionDescription}>{data.cohort.syllabus_version.duration_in_hours} {data.strings["Hours"] || "?"}</p>
+                <p style={stylesDefault.completionDescription}>{data.cohort.syllabus_version.duration_in_hours}  {data.strings["Hours"] || "?"}</p>
                 <p style={stylesDefault.completionDescription}>{data.academy.name}</p>
                 <p style={stylesDefault.completionDescription}>{dayjs(data.issued_at || data.cohort.ending_date).locale(data.lang || "en").format("DD MMMM YYYY")}</p>
             </div>
