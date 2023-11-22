@@ -83,7 +83,7 @@ const Share = ({ cert }) => {
                                         <div className="card-body">
                                             <h5 className="card-title">{strings["Issuer"]}</h5>
                                             <p>{cert && cert.academy.name}</p>
-                                            <SLink href={cert.academy.url || "https://4geeksacademy.co/"}>{strings["website"]}</SLink>
+                                            <SLink href={cert.academy.url || "https://4geeksacademy.com/"}>{strings["website"]}</SLink>
                                         </div>
                                     </div>
                                 </div>
@@ -110,7 +110,7 @@ const Share = ({ cert }) => {
                             <div className="row">
                                 <div className="col-sm-4 col-12 ">
                                     <h4>{strings["Total Hours"]}</h4>
-                                    <p>{cert && cert.cohort.syllabus_version.duration_in_hours}{strings["Hours"]}</p>
+                                    <p>{cert && cert.cohort.syllabus_version.duration_in_hours} {strings["Hours"]}</p>
                                 </div>
                                 <div className="col-sm-4 col-12 ">
                                     <h4>{strings["Issued On"]}</h4>
