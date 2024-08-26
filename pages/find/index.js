@@ -13,6 +13,7 @@ const Find = () => {
     const onSubmit = async (previewFormat) => {
         try {
             if(!token) return;
+            setLoading(true)
 
             const res = await fetch(`${process.env.NEXT_PUBLIC_BC_HOST}/${token}`)
             const data = res.json()
