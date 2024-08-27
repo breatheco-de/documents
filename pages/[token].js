@@ -16,9 +16,16 @@ const Share = ({ cert }) => {
     const { query } = router;
     const [strings,setStrings] = useState(translations[query.lang || "en"]);
     const [path, setPath] = useState("")
+
     useEffect(() => {
         setPath(window.location.href);
     },[])
+
+    const generateShareUrl = () => {
+        const timestamp = new Date().getTime();
+        return `${path}?cacheBuster=${timestamp}`;
+    };
+
     return (
         <>
 
@@ -51,7 +58,7 @@ const Share = ({ cert }) => {
                                     <Button className="w-100"
                                             icon="arrow"
                                             variant="primary"
-                                            href={`https://www.linkedin.com/sharing/share-offsite/?url=${path}`}
+                                            href={`https://www.linkedin.com/sharing/share-offsite/?url=${generateShareUrl()}`}
                                             target={"_blank"}>
                                         <Icon name="linked-in" size="md" />
                                         <Button.Label>{strings["Share on LinkedIn"]}</Button.Label>
