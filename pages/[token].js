@@ -123,17 +123,17 @@ const Share = ({ cert }) => {
                                         </a>
                                         <a
                                             target={"_blank"}
-                                            href={`https://www.linkedin.com/sharing/share-offsite/?url=${generateShareUrl()}`}>
+                                            href={`https://www.facebook.com/sharer/sharer.php?u=${generateShareUrl()}`}>
                                             {SVGS.facebook}
                                         </a>
                                         <a
                                             target={"_blank"}
-                                            href={`https://www.linkedin.com/sharing/share-offsite/?url=${generateShareUrl()}`}>
+                                            href={`https://twitter.com/intent/tweet?url=${generateShareUrl()}&text=Texto%20opcional`}>
                                             {SVGS.twitter}
                                         </a>
                                         <a
                                             target={"_blank"}
-                                            href={`https://www.linkedin.com/sharing/share-offsite/?url=${generateShareUrl()}`}>
+                                            href={`https://www.instagram.com`}>
                                             {SVGS.instagram}
                                         </a>
                                     </div>
