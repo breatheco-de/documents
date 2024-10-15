@@ -44,7 +44,7 @@ const Share = ({ cert }) => {
                     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet" />
                     <link href="https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&display=swap" rel="stylesheet" />
                 </Head>
-                <div className="container-fluid share">
+                <div className="container-fluid share" style={{ maxWidth: '1280px', margin: '0 auto' }}>
                     <div className="row bg-light-blue">
                         <div className="col-md-12 col-12">
                             <div className=" mb-3 mt-3 d-flex bg-green-success rounded align-items-center" >
@@ -60,16 +60,16 @@ const Share = ({ cert }) => {
                     </div>
                     <div className="container">
                         <div className="row pt-4 pb-4 d-flex justify-content-between">
-                            <div className="col-md-7 col-12">
+                            <div className="col-md-7 col-12 p-0">
                                 <div className="row ">
-                                    <div className="col-sm-12 col-12 ">
+                                    <div className="col-sm-12 col-12 p-0">
                                         <h3>{cert.specialty.name || strings["Full Stack Web Development"]}</h3>
                                         <p>{cert.specialty.description}</p>
                                     </div>
                                 </div>
-                                <div className="row ">
+                                <div className="row">
                                     <div className="col-md-12 col-12 p-0">
-                                        <div className="d-flex" >
+                                        <div className="d-flex p-0 mb-3" >
                                             <div className="mr-2">
                                                 {cert.user.avatar_url ? <img src={cert.user.avatar_url} width="40px" height="40px" /> : SVGS.userIcon}
                                             </div>
@@ -81,7 +81,7 @@ const Share = ({ cert }) => {
                                     </div>
                                 </div>
                                 <div className="row">
-                                    <div className="col-sm-4 col-12 d-flex">
+                                    <div className="col-sm-4 col-12 d-flex p-0">
                                         <div className="mr-2">
                                             {SVGS.timeIcon}
                                         </div>
@@ -90,7 +90,7 @@ const Share = ({ cert }) => {
                                             <p>{cert && cert.cohort.syllabus_version.duration_in_hours} {strings["Hours"]}</p>
                                         </div>
                                     </div>
-                                    <div className="col-sm-4 col-12 d-flex">
+                                    <div className="col-sm-4 col-12 d-flex p-0">
                                         <div className="mr-2">
                                             {SVGS.calendarIcon}
                                         </div>
@@ -99,7 +99,7 @@ const Share = ({ cert }) => {
                                             <p>{cert && dayjs(cert.created_at).locale(query.lang || "en").format("DD MMMM YYYY")}</p>
                                         </div>
                                     </div>
-                                    <div className="col-sm-4 col-12 d-flex">
+                                    <div className="col-sm-4 col-12 d-flex p-0">
                                         <div className="mr-2">
                                             {SVGS.birrete}
                                         </div>
@@ -112,10 +112,10 @@ const Share = ({ cert }) => {
                             </div>
                             <div className="col-md-3 p-0">
                                 <div className="row pb-2">
-                                    <div className="col-12 p-0">
+                                    <div className="col-12 mt-3 mt-sm-0 p-0">
                                         <p>Share certificate</p>
                                     </div>
-                                    <div className="col-md-12 col-12 d-flex  justify-content-between p-0">
+                                    <div className="col-md-12 col-12 d-flex p-0" style={{ gap: '50px', width: '200px', justifyContent: 'center'}}>
                                         <a
                                             target={"_blank"}
                                             href={`https://www.linkedin.com/sharing/share-offsite/?url=${generateShareUrl()}`}>
@@ -130,11 +130,6 @@ const Share = ({ cert }) => {
                                             target={"_blank"}
                                             href={`https://twitter.com/intent/tweet?url=${generateShareUrl()}&text=Texto%20opcional`}>
                                             {SVGS.twitter}
-                                        </a>
-                                        <a
-                                            target={"_blank"}
-                                            href={`https://www.instagram.com`}>
-                                            {SVGS.instagram}
                                         </a>
                                     </div>
                                 </div>
