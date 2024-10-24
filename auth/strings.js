@@ -22,10 +22,12 @@
     "Issuer":"Issuer",
     "website":"website",
     "Development":"Development",
+    "valid-certificate":"This certificate is valid, and it does not expires.",
     "The Full Stack Development Program":"The Full Stack Development Program",
     "Total Hours":"Total Hours",
     "Certificate of":"Certificate of",
     "to":"to",
+    "or":"or",
     "Development":"Development",
     "And":"and",
     'This document certifies that the student is a Full Stack Web Developer,with proficient knowlege to help in the creation of web applications using HTML/CSS,Javascript, React and REST API using SQL, Python and the Flask Framework':'This document certifies that the student is a Full Stack Web developer,with proficient knowlege to help in the creation of web applications using HTML/CSS,Javascript, React and REST API using SQL, Python and the Flask Framework'
@@ -44,6 +46,7 @@ let es = {
     "The Full Stack Development Program":"El programa Full Stack Software Development",
     "Recognizes that":"Reconoce que",
     "This certificate is valid.":"Este certificado es valido.",
+    "valid-certificate":"Este certificado es valido y no expira.",
     "Development":"Desarrollo",
     "Issued On":"Emitido el",
     "Expired On":"Expira el",
@@ -57,6 +60,7 @@ let es = {
     "Total Hours":"Horas Totales",
     "Share on LinkedIn":"Compartir en LinkedIn",
     "and it does not expires":"y no tiene fecha de expiración",
+    "or":"ó",
     "view all certificates":"ver todos los certificados",
     "Full Stack Web Development":"Full Stack Web Development",
     'This document certifies that the student is a Full Stack Web Developer,with proficient knowlege to help in the creation of web applications using HTML/CSS,Javascript, React and REST API using SQL, Python and the Flask Framework':'Este documento certifica que el estudiante es un Desarrollador Web Full Stack, con un conocimiento competente para ayudar en la creación de aplicaciones web usando HTML/CSS, Javascript, React y REST API usando SQL, Python y el Framework de Flask'
