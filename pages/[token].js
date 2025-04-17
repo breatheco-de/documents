@@ -245,7 +245,7 @@ const Share = ({ cert }) => {
         </>
       ) : (
         <div className="container">
-          {cert.detail ? (
+          {cert?.detail ? (
             <Alert variant="danger" className="shadow-one mt-4 d-flex">
               {cert.detail}
             </Alert>
