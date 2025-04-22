@@ -265,7 +265,6 @@ export async function getServerSideProps(context) {
   const { token } = context.query;
   const res = await fetch(`${process.env.NEXT_PUBLIC_BC_HOST}/${token}`);
   const cert = await res.json();
-  console.log(cert);
   return {
     props: {
       cert,
