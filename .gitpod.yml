@@ -11,5 +11,5 @@ tasks:
   - init: (cp -n .env.example .env || true) # runs during prebuild
     command: >
       npm i vercel -g;
-      npm install;
+      npm install --legacy-peer-deps;
       npm run dev;
