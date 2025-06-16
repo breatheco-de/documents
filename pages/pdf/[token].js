@@ -1,4 +1,5 @@
 import React from "react";
+import Head from "next/head";
 import ModernCertificate from "../../components/certificates/modern";
 import DefaultCertificate from "../../components/certificates/default";
 import PDFLayout from "../../components/PDFLayout";
@@ -10,6 +11,9 @@ import Link from "../../components/ui/Link";
 const Pdf = () => {
   return (
     <>
+      <Head>
+        <meta name="robots" content="noindex, nofollow" />
+      </Head>
       <div className="container">
         <Alert variant="danger" className="shadow-one mt-4 d-flex">
           Ooops... Certificate not found or something went wrong ,{" "}
