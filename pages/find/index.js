@@ -19,6 +19,10 @@ const Find = () => {
             const data = res.json()
 
             if(!res.ok || !data) throw new Error(data.detail)
+            if(previewFormat === "pdf") {
+                window.open(`/${previewFormat}/${token}`, "_blank");
+                return;
+            }
             Router.push(`/${previewFormat}/${token}`)
         } catch (err) {
             console.error("Error fetching data:", err);
