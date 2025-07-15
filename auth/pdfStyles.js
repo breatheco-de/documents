@@ -35,17 +35,17 @@ export const stylesDefault = {
     name:{
         position: "absolute",
         left: "0%",
-        top: "60%",
+        top: "61%",
         textAlign: "center",
         width:"100%"
     },
     lastName:{
-        fontSize:"36px", 
+        fontSize:"45px", 
         fontWeight:300, 
         fontFamily:"Lato, sans-serif"
     },
     firstName:{
-        fontSize:"36px", 
+        fontSize:"45px", 
         fontWeight:700, 
         fontFamily:"Lato, sans-serif"
     },
@@ -56,7 +56,7 @@ export const stylesDefault = {
         textAlign:"center"
     },
     givenTo:{
-        fontSize:"18px", 
+        fontSize:"24px", 
         fontWeight:300, 
         fontFamily:"Lato, sans-serif"
     },
@@ -67,7 +67,7 @@ export const stylesDefault = {
         textAlign:"center"
     },
     completionDescription:{
-        fontSize:"18px", 
+        fontSize:"24px", 
         fontWeight:300, 
         fontFamily:"Lato, sans-serif",
         margin:0
@@ -99,7 +99,7 @@ export const stylesDefault = {
         margin:0,
     },
     sign:{
-        fontSize:"30px",
+        fontSize:"41px",
         fontFamily:"Mrs Saint Delafield, cursive",
         margin:0,
     },
