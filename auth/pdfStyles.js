@@ -56,7 +56,7 @@ export const stylesDefault = {
         textAlign:"center"
     },
     givenTo:{
-        fontSize:"18px", 
+        fontSize:"24px", 
         fontWeight:300, 
         fontFamily:"Lato, sans-serif"
     },
