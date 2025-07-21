@@ -41,6 +41,7 @@ export const getServerSideProps = async (context) => {
                 token: token,
                 lang: query.lang || "en",
                 strings: strings[query.lang || "en"],
+                forPDF: true,
               }}
             />
           ) : (
@@ -50,6 +51,7 @@ export const getServerSideProps = async (context) => {
                 token: token,
                 lang: query.lang || "en",
                 strings: strings[query.lang || "en"],
+                forPDF: true,
               }}
             />
           )}
