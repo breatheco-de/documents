@@ -81,7 +81,7 @@ export const stylesDefault = {
     },
     signature:{
         position:"absolute", 
-        top:"80%", 
+        top:"81%", 
         right:"-29%",
         width:"100%", 
         textAlign:"center"
@@ -100,6 +100,125 @@ export const stylesDefault = {
     },
     sign:{
         fontSize:"41px",
+        fontFamily:"Mrs Saint Delafield, cursive",
+        margin:0,
+    },
+     verify:{
+        position:"absolute", 
+        top:"97%", 
+        width:"100%", 
+        textAlign:"center"
+    },
+    at:{
+        fontSize:"9px", 
+        fontWeight:300, 
+        fontFamily:"Lato, sans-serif",
+        margin:0,
+    }
+}
+
+export const stylesDefaultPreview = {
+    body: {
+        width: "100%",
+        height: "100%"
+    },
+    header: {
+        position: "absolute", 
+        top: "36px", 
+        width: "100%", 
+        textAlign: "center"
+    },
+    certificate:{
+        fontSize:"36px", 
+        fontWeight:300, 
+        fontFamily:"Lato, sans-serif",
+        color:"white",
+        margin:0,
+        paddingTop:"10px"
+    },
+    program:{
+        fontSize:"18px", 
+        fontWeight:300, 
+        fontFamily:"Lato, sans-serif",
+        color:"white",
+        margin:0,
+        marginBottom: "20px"
+    },
+    fullStack:{
+        fontSize:"21px", 
+        fontWeight:700, 
+        fontFamily:"Lato, sans-serif",
+        color:"white",
+        margin:0,
+    },
+    name:{
+        position: "absolute",
+        left: "0%",
+        top: "60%",
+        textAlign: "center",
+        width:"100%"
+    },
+    lastName:{
+        fontSize:"36px", 
+        fontWeight:300, 
+        fontFamily:"Lato, sans-serif"
+    },
+    firstName:{
+        fontSize:"36px", 
+        fontWeight:700, 
+        fontFamily:"Lato, sans-serif"
+    },
+    to:{
+        position:"absolute", 
+        top:"55%", 
+        width:"100%", 
+        textAlign:"center"
+    },
+    givenTo:{
+        fontSize:"18px", 
+        fontWeight:300, 
+        fontFamily:"Lato, sans-serif"
+    },
+    completion:{
+        position:"absolute", 
+        top:"67%", 
+        width:"100%", 
+        textAlign:"center"
+    },
+    completionDescription:{
+        fontSize:"18px", 
+        fontWeight:300, 
+        fontFamily:"Lato, sans-serif",
+        margin:0
+    },
+    department:{
+        position:"absolute", 
+        top:"82%", 
+        left:"10%", 
+        width:"100%",
+        textAlign:"left"
+    },
+    signature:{
+        position:"absolute", 
+        top:"82%", 
+        right:"-29%",
+        width:"100%", 
+        textAlign:"center"
+    },
+    signedBy:{
+        fontSize:"14px", 
+        fontWeight:300, 
+        fontFamily:"Lato, sans-serif",
+        margin:0,
+    },
+    role:{
+        fontSize:"14px", 
+        fontWeight:400, 
+        fontFamily:"Lato, sans-serif",
+        margin:0,
+    },
+    sign:{
+        fontSize:"28px",
         fontFamily:"Mrs Saint Delafield, cursive",
         margin:0,
     },
