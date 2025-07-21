@@ -200,25 +200,25 @@ export const stylesDefaultPreview = {
     },
     signature:{
         position:"absolute", 
-        top:"80%", 
+        top:"82%", 
         right:"-29%",
         width:"100%", 
         textAlign:"center"
     },
     signedBy:{
-        fontSize:"18px", 
+        fontSize:"14px", 
         fontWeight:300, 
         fontFamily:"Lato, sans-serif",
         margin:0,
     },
     role:{
-        fontSize:"18px", 
+        fontSize:"14px", 
         fontWeight:400, 
         fontFamily:"Lato, sans-serif",
         margin:0,
     },
     sign:{
-        fontSize:"30px",
+        fontSize:"28px",
         fontFamily:"Mrs Saint Delafield, cursive",
         margin:0,
     },
