@@ -158,6 +158,13 @@ export const stylesDefaultPreview = {
         textAlign: "center",
         width:"100%"
     },
+    nameDefault4Geeks:{
+        position: "absolute",
+        left: "0%",
+        top: "57%",
+        textAlign: "center",
+        width:"100%"
+    },
     lastName:{
         fontSize:"36px", 
         fontWeight:300, 
@@ -174,6 +181,12 @@ export const stylesDefaultPreview = {
         width:"100%", 
         textAlign:"center"
     },
+    toDefault4Geeks:{
+        position:"absolute", 
+        top:"53%", 
+        width:"100%", 
+        textAlign:"center"
+    },
     givenTo:{
         fontSize:"18px", 
         fontWeight:300, 
@@ -182,6 +195,12 @@ export const stylesDefaultPreview = {
     completion:{
         position:"absolute", 
         top:"67%", 
+        width:"100%", 
+        textAlign:"center"
+    },
+    completionDefault4Geeks: {
+        position:"absolute", 
+        top:"63%", 
         width:"100%", 
         textAlign:"center"
     },
