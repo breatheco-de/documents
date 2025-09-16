@@ -10,6 +10,7 @@ const Certificate = ({ data }) => {
     }
     
     const styles = data.forPDF ? stylesDefault : stylesDefaultPreview;
+    const default4Geeks = data.layout?.slug == 'default-4geeks' && styles == stylesDefaultPreview
     
     return (
         <div style={styles.body} id={data.html}>
@@ -18,15 +19,23 @@ const Certificate = ({ data }) => {
                 <p style={styles.program}>{data.strings["Program"].toUpperCase()}</p>
                 <p style={styles.fullStack}>{"</"}{data.specialty.name.toUpperCase() || data.strings["Full Stack Software Development"].toUpperCase()}{">"}</p>
             </div>
-            <div id="to" style={styles.to}>
+            <div id="to" style={default4Geeks ? styles.toDefault4Geeks : styles.to}>
                 <span style={styles.givenTo}>{data.strings["Recognizes that"]}:</span>
             </div>
-            <div id="name" style={styles.name} >
+            <div id="name" style={default4Geeks ? styles.nameDefault4Geeks : styles.name} >
                 <span style={styles.firstName}>{"</"}{data.profile_academy?.first_name || data.user.first_name}</span>
                 <span style={styles.lastName}> {data.profile_academy?.last_name || data.user.last_name}{">"}</span>
             </div>
-            <div id="completion" style={styles.completion}>
-                <p style={styles.completionDescription}>{data.strings["Has successfully completed"] + " " + data.specialty.name.toUpperCase()}</p>
+            <div id="completion" style={default4Geeks ? styles.completionDefault4Geeks : styles.completion}>
+                {
+                    data.layout?.slug == 'default-4geeks' ?
+                    <>
+                        <p style={styles.completionDescription}>{data.strings["Has successfully completed"]}</p>
+                        <p style={styles.completionDescription}>{data.specialty.name.toUpperCase()}</p>
+                    </>
+                    :
+                    <p style={styles.completionDescription}>{data.strings["Has successfully completed"] + ' ' + data.specialty.name.toUpperCase()}</p>
+                }       
                 <p style={styles.completionDescription}>{data.cohort.syllabus_version.duration_in_hours}  {data.strings["Hours"] || "?"}</p>
                 <p style={styles.completionDescription}>{data.academy.name}</p>
                 <p style={styles.completionDescription}>{dayjs(data.issued_at || data.cohort.ending_date).locale(data.lang || "en").format("DD MMMM YYYY")}</p>
