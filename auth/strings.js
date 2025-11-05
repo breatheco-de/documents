@@ -30,7 +30,7 @@
     "or":"or",
     "Development":"Development",
     "And":"and",
-    "Instructor Principal":"Principal Instructor",
+    "Instructor Principal":"Lead Instructor",
     "Lead Instructor":"Lead Instructor",
     'This document certifies that the student is a Full Stack Web Developer,with proficient knowlege to help in the creation of web applications using HTML/CSS,Javascript, React and REST API using SQL, Python and the Flask Framework':'This document certifies that the student is a Full Stack Web developer,with proficient knowlege to help in the creation of web applications using HTML/CSS,Javascript, React and REST API using SQL, Python and the Flask Framework'
 }
