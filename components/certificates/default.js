@@ -43,7 +43,7 @@ const Certificate = ({ data }) => {
             <div id="signature" style={styles.signature}>
                 <p style={styles.sign}>{data.signed_by}</p>
                 <p style={styles.signedBy}>{data.signed_by}</p>
-                <p style={styles.role}>{data.signed_by_role}</p>
+                <p style={styles.role}>{data.strings[data.signed_by_role] || data.signed_by_role}</p>
             </div>
             <div id="verify" style={styles.verify}>
                 <span style={styles.at}>{data.layout?.foot_note ? `${data.layout.foot_note}` : ''} Verify this certificate at https://certificate.breatheco.de/{data.token}</span>
