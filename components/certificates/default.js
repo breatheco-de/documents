@@ -46,7 +46,7 @@ const Certificate = ({ data }) => {
                 <p style={styles.role}>{data.strings[data.signed_by_role] || data.signed_by_role}</p>
             </div>
             <div id="verify" style={styles.verify}>
-                <span style={styles.at}>{data.layout?.foot_note ? `${data.layout.foot_note}` : ''} Verify this certificate at https://certificate.breatheco.de/{data.token}</span>
+                <span style={styles.at}>{data.layout?.foot_note ? `${data.layout.foot_note}` : ''} Verify this certificate at https://certificate.4geeks.com/{data.token}</span>
             </div>
             <img src={setBackground()} style={{width:"100%"}}/>
         </div>
