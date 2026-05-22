@@ -34,7 +34,7 @@ const Certificate = ({data}) => {
                 <p style={stylesModern.role}>{data.strings[data.signed_by_role] || data.signed_by_role}</p>
             </div>
             <div id="verify" style={stylesModern.verify}>
-                <span style={stylesModern.at}>Verify this certificate at https://certificate.breatheco.de/{data.token}</span>
+                <span style={stylesModern.at}>Verify this certificate at https://certificate.4geeks.com/{data.token}</span>
             </div>
             <img src={setBackground()} style={{width:"100%"}}/>
         </div>
